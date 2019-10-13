@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Posts</title>
+    <title>پالم فیکشن</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>Posts...</h1>
+<h1>سایت وب مستران پالم</h1>
 {% for post in posts %}
     <div>
         <p>Created : {{ post.created_date }}</p>
